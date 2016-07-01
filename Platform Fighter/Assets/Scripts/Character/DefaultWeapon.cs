@@ -30,7 +30,7 @@ public class DefaultWeapon : MonoBehaviour
             if (rb2d != null)
                 rb2d.AddForce(Force);
             if (character != null)
-                character.Damage(0, true, DamageDefinitions.DMGTYPE.BLUNT);
+                character.Damage(0, true, GlobalDefinitions.DMGTYPE.BLUNT);
             
         }
     }

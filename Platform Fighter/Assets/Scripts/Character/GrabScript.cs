@@ -17,7 +17,9 @@ public class GrabScript : MonoBehaviour
 
     public void TryLifting(Rigidbody2D rb2d)
     {
-        if (rb2d.mass <= MaxWeight)
+        //Check if it's a character, not implemented yet
+        var player = rb2d.gameObject.GetComponent<PlatformerCharacter2D>();
+        if (rb2d.mass <= MaxWeight && player == null)
         {
             Lift(rb2d);
         }
@@ -31,6 +33,7 @@ public class GrabScript : MonoBehaviour
     private void Lift(Rigidbody2D rb2d)
     {
         OwnerPlatform.Grabbing = true;
+        rb2d.gameObject.GetComponent<Throwable>().SetLastOwner(OwnerPlatform);
         LiftedObject = rb2d;
         OwnerPlatform.m_TotalMass += LiftedObject.mass;
         var joint = LiftedObject.gameObject.AddComponent<FixedJoint2D>();

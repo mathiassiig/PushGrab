@@ -3,10 +3,11 @@ using System.Collections;
 
 public class Throwable : MonoBehaviour
 {
-    public DamageDefinitions.DMGTYPE type;
+    public GlobalDefinitions.DMGTYPE type;
     public float CurrentVelocityMagnitude;
     public Rigidbody2D rb2d;
     public CustomCamera cam;
+    public PlatformerCharacter2D LastOwner;
     void Start()
     {
         rb2d = GetComponent<Rigidbody2D>();
@@ -19,6 +20,11 @@ public class Throwable : MonoBehaviour
         float LastVelocity = CurrentVelocityMagnitude;
         CurrentVelocityMagnitude = rb2d.velocity.magnitude;
         CheckForScreenShake(LastVelocity, CurrentVelocityMagnitude);
+    }
+
+    public void SetLastOwner(PlatformerCharacter2D character)
+    {
+        LastOwner = character;
     }
 
     void CheckForScreenShake(float last, float current)

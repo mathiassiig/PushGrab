@@ -76,6 +76,8 @@
     <Compile Include="Assets\Scripts\Character\Platformer2DUserControl.cs" />
     <Compile Include="Assets\Scripts\Character\PlatformerCharacter2D.cs" />
     <Compile Include="Assets\Scripts\CustomCamera.cs" />
+    <Compile Include="Assets\Scripts\Game Mechanics\GameMaster.cs" />
+    <Compile Include="Assets\Scripts\Game Mechanics\RespawnPoint.cs" />
     <Compile Include="Assets\Scripts\LayerTouching.cs" />
     <Compile Include="Assets\Scripts\Throwable.cs" />
   </ItemGroup>

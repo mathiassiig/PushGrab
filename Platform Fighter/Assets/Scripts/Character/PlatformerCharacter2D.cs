@@ -103,6 +103,11 @@ public class PlatformerCharacter2D : MonoBehaviour
                 if ((m_Rigidbody2D.velocity.x < m_MaxSpeed && move > 0) || (m_Rigidbody2D.velocity.x > -m_MaxSpeed && move < 0))
                     m_Rigidbody2D.AddForce(new Vector2(5*move * m_MaxSpeed * m_Rigidbody2D.mass, 0));
             }
+            else if(m_AirControl && !m_Grounded)
+            {
+                if ((m_Rigidbody2D.velocity.x < m_MaxSpeed && move > 0) || (m_Rigidbody2D.velocity.x > -m_MaxSpeed && move < 0))
+                    m_Rigidbody2D.AddForce(new Vector2(3.5f*move * m_MaxSpeed * m_Rigidbody2D.mass, 0));
+            }
         }
     }
 

@@ -1,18 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public static class DamageDefinitions
-{
-    public enum DMGTYPE
-    {
-        FIRE,
-        PIERCING,
-        BLUNT,
-        EXPLOSION,
-        SLASHING
-    };
-}
-
 public class CharacterHealth : MonoBehaviour
 {
     public bool m_Stunned;
@@ -28,7 +16,7 @@ public class CharacterHealth : MonoBehaviour
         self_rb2d = GetComponent<Rigidbody2D>();
     }
 
-    public void Damage(float amount, bool stuns, DamageDefinitions.DMGTYPE type) //add direction
+    public void Damage(float amount, bool stuns, GlobalDefinitions.DMGTYPE type) //add direction
     {
         Health -= amount;
         TakeVisualDamage();
@@ -36,9 +24,9 @@ public class CharacterHealth : MonoBehaviour
             StartCoroutine(StartStun());
         switch (type)
         {
-            case DamageDefinitions.DMGTYPE.BLUNT:
-            case DamageDefinitions.DMGTYPE.PIERCING:
-            case DamageDefinitions.DMGTYPE.SLASHING:
+            case GlobalDefinitions.DMGTYPE.BLUNT:
+            case GlobalDefinitions.DMGTYPE.PIERCING:
+            case GlobalDefinitions.DMGTYPE.SLASHING:
                 Bleed();
                 break;
         }
@@ -59,27 +47,28 @@ public class CharacterHealth : MonoBehaviour
 
     }
 
+    //add direction
     public void Bleed()
     {
 
-    } //add direction
+    }
 
 
-    public void Death(DamageDefinitions.DMGTYPE type)  //add direction
+    public void Death(GlobalDefinitions.DMGTYPE type)  //add direction
     {
         Dead = true;
         switch (type)
         {
-            case DamageDefinitions.DMGTYPE.BLUNT:
+            case GlobalDefinitions.DMGTYPE.BLUNT:
                 break;
-            case DamageDefinitions.DMGTYPE.EXPLOSION:
+            case GlobalDefinitions.DMGTYPE.EXPLOSION:
                 break;
-            case DamageDefinitions.DMGTYPE.FIRE:
+            case GlobalDefinitions.DMGTYPE.FIRE:
                 break;
-            case DamageDefinitions.DMGTYPE.PIERCING:
+            case GlobalDefinitions.DMGTYPE.PIERCING:
                 break;
         }
-        Destroy(gameObject);
+        FindObjectOfType<GameMaster>().PlayerDied(gameObject.GetComponent<PlatformerCharacter2D>());
     }
 
     public void Heal(float amount)
