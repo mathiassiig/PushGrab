@@ -10,6 +10,7 @@ public class RespawnPoint : MonoBehaviour
         player.transform.position = transform.position;
         RespawnEffects();
         player.gameObject.SetActive(true);
+        player.GetComponent<CharacterHealth>().m_Stunned = false;
         Pristine = false;
     }
 

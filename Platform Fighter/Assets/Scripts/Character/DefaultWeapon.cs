@@ -29,8 +29,6 @@ public class DefaultWeapon : MonoBehaviour
             CharacterHealth character = collider.gameObject.GetComponent<CharacterHealth>();
             if (rb2d != null)
                 rb2d.AddForce(Force);
-            if (character != null)
-                character.Damage(0, true, GlobalDefinitions.DMGTYPE.BLUNT);
             
         }
     }

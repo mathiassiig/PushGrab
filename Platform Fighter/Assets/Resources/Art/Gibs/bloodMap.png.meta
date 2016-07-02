@@ -1,0 +1,1029 @@
+fileFormatVersion: 2
+guid: fdf7041b5c6776f48a8022cadc31f45a
+timeCreated: 1467464008
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: bloodMap_0
+    21300002: bloodMap_1
+    21300004: bloodMap_2
+    21300006: bloodMap_3
+    21300008: bloodMap_4
+    21300010: bloodMap_5
+    21300012: bloodMap_6
+    21300014: bloodMap_7
+    21300016: bloodMap_8
+    21300018: bloodMap_9
+    21300020: bloodMap_10
+    21300022: bloodMap_11
+    21300024: bloodMap_12
+    21300026: bloodMap_13
+    21300028: bloodMap_14
+    21300030: bloodMap_15
+    21300032: bloodMap_16
+    21300034: bloodMap_17
+    21300036: bloodMap_18
+    21300038: bloodMap_19
+    21300040: bloodMap_20
+    21300042: bloodMap_21
+    21300044: bloodMap_22
+    21300046: bloodMap_23
+    21300048: bloodMap_24
+    21300050: bloodMap_25
+    21300052: bloodMap_26
+    21300054: bloodMap_27
+    21300056: bloodMap_28
+    21300058: bloodMap_29
+    21300060: bloodMap_30
+    21300062: bloodMap_31
+    21300064: bloodMap_32
+    21300066: bloodMap_33
+    21300068: bloodMap_34
+    21300070: bloodMap_35
+    21300072: bloodMap_36
+    21300074: bloodMap_37
+    21300076: bloodMap_38
+    21300078: bloodMap_39
+    21300080: bloodMap_40
+    21300082: bloodMap_41
+    21300084: bloodMap_42
+    21300086: bloodMap_43
+    21300088: bloodMap_44
+    21300090: bloodMap_45
+    21300092: bloodMap_46
+    21300094: bloodMap_47
+    21300096: bloodMap_48
+    21300098: bloodMap_49
+    21300100: bloodMap_50
+    21300102: bloodMap_51
+    21300104: bloodMap_52
+    21300106: bloodMap_53
+    21300108: bloodMap_54
+    21300110: bloodMap_55
+    21300112: bloodMap_56
+    21300114: bloodMap_57
+    21300116: bloodMap_58
+    21300118: bloodMap_59
+    21300120: bloodMap_60
+    21300122: bloodMap_61
+    21300124: bloodMap_62
+    21300126: bloodMap_63
+    21300128: bloodMap_64
+    21300130: bloodMap_65
+    21300132: bloodMap_66
+    21300134: bloodMap_67
+    21300136: bloodMap_68
+    21300138: bloodMap_69
+    21300140: bloodMap_70
+    21300142: bloodMap_71
+    21300144: bloodMap_72
+    21300146: bloodMap_73
+    21300148: bloodMap_74
+    21300150: bloodMap_75
+    21300152: bloodMap_76
+    21300154: bloodMap_77
+    21300156: bloodMap_78
+    21300158: bloodMap_79
+    21300160: bloodMap_80
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 64
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: bloodMap_0
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 487
+        width: 10
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: bloodMap_1
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 481
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: bloodMap_2
+      rect:
+        serializedVersion: 2
+        x: 94
+        y: 482
+        width: 11
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: bloodMap_3
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 487
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: bloodMap_4
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 485
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: bloodMap_5
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 479
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: bloodMap_6
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 455
+        width: 14
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: bloodMap_7
+      rect:
+        serializedVersion: 2
+        x: 115
+        y: 459
+        width: 9
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: bloodMap_8
+      rect:
+        serializedVersion: 2
+        x: 155
+        y: 461
+        width: 15
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: bloodMap_9
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 460
+        width: 10
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: bloodMap_10
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 449
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: bloodMap_11
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 448
+        width: 7
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: bloodMap_12
+      rect:
+        serializedVersion: 2
+        x: 179
+        y: 443
+        width: 9
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: bloodMap_13
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 428
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: bloodMap_14
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 427
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: bloodMap_15
+      rect:
+        serializedVersion: 2
+        x: 139
+        y: 429
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: bloodMap_16
+      rect:
+        serializedVersion: 2
+        x: 190
+        y: 418
+        width: 11
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: bloodMap_17
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 410
+        width: 12
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: bloodMap_18
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 415
+        width: 11
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: bloodMap_19
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 400
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: bloodMap_20
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 404
+        width: 10
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: bloodMap_21
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 404
+        width: 10
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: bloodMap_22
+      rect:
+        serializedVersion: 2
+        x: 134
+        y: 392
+        width: 14
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: bloodMap_23
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 381
+        width: 9
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: bloodMap_24
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 375
+        width: 10
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: bloodMap_25
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 383
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: bloodMap_26
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 365
+        width: 11
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: bloodMap_27
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 365
+        width: 9
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: bloodMap_28
+      rect:
+        serializedVersion: 2
+        x: 163
+        y: 367
+        width: 12
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: bloodMap_29
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 361
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: bloodMap_30
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 335
+        width: 10
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: bloodMap_31
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 329
+        width: 29
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: bloodMap_32
+      rect:
+        serializedVersion: 2
+        x: 125
+        y: 339
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: bloodMap_33
+      rect:
+        serializedVersion: 2
+        x: 187
+        y: 332
+        width: 11
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: bloodMap_34
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 317
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: bloodMap_35
+      rect:
+        serializedVersion: 2
+        x: 158
+        y: 324
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: bloodMap_36
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 299
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: bloodMap_37
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 301
+        width: 6
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: bloodMap_38
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 288
+        width: 14
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: bloodMap_39
+      rect:
+        serializedVersion: 2
+        x: 187
+        y: 303
+        width: 8
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: bloodMap_40
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 266
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: bloodMap_41
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 283
+        width: 16
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: bloodMap_42
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 277
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: bloodMap_43
+      rect:
+        serializedVersion: 2
+        x: 191
+        y: 269
+        width: 12
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: bloodMap_44
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 245
+        width: 11
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: bloodMap_45
+      rect:
+        serializedVersion: 2
+        x: 95
+        y: 253
+        width: 6
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: bloodMap_46
+      rect:
+        serializedVersion: 2
+        x: 125
+        y: 254
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: bloodMap_47
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 255
+        width: 12
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: bloodMap_48
+      rect:
+        serializedVersion: 2
+        x: 44
+        y: 226
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: bloodMap_49
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 230
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: bloodMap_50
+      rect:
+        serializedVersion: 2
+        x: 116
+        y: 222
+        width: 8
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: bloodMap_51
+      rect:
+        serializedVersion: 2
+        x: 163
+        y: 225
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: bloodMap_52
+      rect:
+        serializedVersion: 2
+        x: 182
+        y: 230
+        width: 12
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: bloodMap_53
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 200
+        width: 11
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: bloodMap_54
+      rect:
+        serializedVersion: 2
+        x: 94
+        y: 196
+        width: 6
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: bloodMap_55
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 203
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: bloodMap_56
+      rect:
+        serializedVersion: 2
+        x: 187
+        y: 197
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: bloodMap_57
+      rect:
+        serializedVersion: 2
+        x: 59
+        y: 195
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: bloodMap_58
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 175
+        width: 10
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: bloodMap_59
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 156
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: bloodMap_60
+      rect:
+        serializedVersion: 2
+        x: 116
+        y: 163
+        width: 8
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: bloodMap_61
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 155
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: bloodMap_62
+      rect:
+        serializedVersion: 2
+        x: 89
+        y: 139
+        width: 11
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: bloodMap_63
+      rect:
+        serializedVersion: 2
+        x: 177
+        y: 143
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: bloodMap_64
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 129
+        width: 10
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: bloodMap_65
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 114
+        width: 17
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: bloodMap_66
+      rect:
+        serializedVersion: 2
+        x: 29
+        y: 116
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: bloodMap_67
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 114
+        width: 10
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: bloodMap_68
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 102
+        width: 13
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: bloodMap_69
+      rect:
+        serializedVersion: 2
+        x: 184
+        y: 101
+        width: 12
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: bloodMap_70
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 86
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: bloodMap_71
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 73
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: bloodMap_72
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 71
+        width: 13
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: bloodMap_73
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 60
+        width: 13
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: bloodMap_74
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 67
+        width: 10
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: bloodMap_75
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 30
+        width: 8
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: bloodMap_76
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 39
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: bloodMap_77
+      rect:
+        serializedVersion: 2
+        x: 179
+        y: 36
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: bloodMap_78
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 30
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: bloodMap_79
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 18
+        width: 12
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: bloodMap_80
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 11
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

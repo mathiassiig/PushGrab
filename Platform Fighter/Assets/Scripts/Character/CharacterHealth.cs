@@ -1,38 +1,33 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class CharacterHealth : MonoBehaviour
+public class CharacterHealth : Health
 {
     public bool m_Stunned;
     public float StunTime;
-    public float Health;
-    public float MaxHealth;
     public bool Dead = false;
     public float SpeedDiff = 1000f;
     public Rigidbody2D self_rb2d;
+    public CharacterVisuals visuals;
 
     void Start()
     {
         self_rb2d = GetComponent<Rigidbody2D>();
+        visuals = GetComponent<CharacterVisuals>();
     }
 
-    public void Damage(float amount, bool stuns, GlobalDefinitions.DMGTYPE type) //add direction
+    public override void Damage(float amount, bool stuns, GlobalDefinitions.DMGTYPE type, Vector2 direction)
     {
-        Health -= amount;
         TakeVisualDamage();
-        if(stuns)
+        if (stuns)
             StartCoroutine(StartStun());
-        switch (type)
+        Bleed();
+        HP -= amount;
+        if (HP <= 0)
         {
-            case GlobalDefinitions.DMGTYPE.BLUNT:
-            case GlobalDefinitions.DMGTYPE.PIERCING:
-            case GlobalDefinitions.DMGTYPE.SLASHING:
-                Bleed();
-                break;
+            visuals.VisualDeath(type, direction, Mathf.Abs(HP));
+            Death(type, direction);
         }
-
-        if (Health <= 0)
-            Death(type);
     }
 
     IEnumerator StartStun()
@@ -54,44 +49,32 @@ public class CharacterHealth : MonoBehaviour
     }
 
 
-    public void Death(GlobalDefinitions.DMGTYPE type)  //add direction
+    public override void Death(GlobalDefinitions.DMGTYPE type, Vector2 direction)  //add direction
     {
         Dead = true;
-        switch (type)
-        {
-            case GlobalDefinitions.DMGTYPE.BLUNT:
-                break;
-            case GlobalDefinitions.DMGTYPE.EXPLOSION:
-                break;
-            case GlobalDefinitions.DMGTYPE.FIRE:
-                break;
-            case GlobalDefinitions.DMGTYPE.PIERCING:
-                break;
-        }
         FindObjectOfType<GameMaster>().PlayerDied(gameObject.GetComponent<PlatformerCharacter2D>());
     }
 
     public void Heal(float amount)
     {
-        Health += amount;
-        if (Health > MaxHealth)
-            Health = MaxHealth;
+        HP += amount;
+        if (HP > MAXHP)
+            HP = MAXHP;
     }
 
     void OnCollisionEnter2D(Collision2D collision)
     {
-
         //Check for direction
         float speed = self_rb2d.velocity.magnitude;
         Throwable throwable = collision.gameObject.GetComponent<Throwable>();
         float diff = 0;
-        if(throwable != null)
+        if (throwable != null)
         {
             diff = Mathf.Abs(throwable.CurrentVelocityMagnitude - speed);
-            if(diff > SpeedDiff && throwable.CurrentVelocityMagnitude > SpeedDiff)
+            if (diff > SpeedDiff && throwable.CurrentVelocityMagnitude > SpeedDiff)
             {
                 //Debug.Log(diff * rb2d.mass);
-                Damage(diff * throwable.rb2d.mass, true, throwable.type);
+                Damage(diff * 0.05f*throwable.rb2d.mass, true, throwable.type, collision.gameObject.transform.position-transform.position);
             }
         }
     }

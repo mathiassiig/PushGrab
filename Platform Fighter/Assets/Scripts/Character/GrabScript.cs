@@ -68,17 +68,20 @@ public class GrabScript : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D collider)
     {
-        if(OwnerPlatform == null)
+        if (OwnerPlatform == null)
         {
             OwnerPlatform = Owner.GetComponent<PlatformerCharacter2D>();
         }
         if (!Lifting)
         {
-            var rb2d = collider.GetComponent<Rigidbody2D>();
-            if (rb2d != null)
+            if (collider.gameObject.layer == 11)
             {
-                Lifting = true;
-                TryLifting(rb2d);
+                var rb2d = collider.GetComponent<Rigidbody2D>();
+                if (rb2d != null)
+                {
+                    Lifting = true;
+                    TryLifting(rb2d);
+                }
             }
         }
     }
