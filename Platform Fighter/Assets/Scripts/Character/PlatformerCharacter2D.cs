@@ -7,8 +7,6 @@ public class PlatformerCharacter2D : MonoBehaviour
     [SerializeField]
     private float m_MaxSpeed = 10f;                    // The fastest the player can travel in the x axis.
     [SerializeField]
-    private float m_AirControlSpeedFactor;
-    [SerializeField]
     private float m_JumpForce = 400f;                  // Amount of force added when the player jumps.
     [SerializeField]
     private bool m_AirControl = false;                 // Whether or not a player can steer while jumping;
@@ -101,7 +99,7 @@ public class PlatformerCharacter2D : MonoBehaviour
             if (m_AirControl && !m_Grounded && !m_WalledLeft && !m_WalledRight)
             {
                 if ((m_Rigidbody2D.velocity.x < m_MaxSpeed && move > 0) || (m_Rigidbody2D.velocity.x > -m_MaxSpeed && move < 0))
-                    m_Rigidbody2D.AddForce(new Vector2(5*move * m_MaxSpeed * m_Rigidbody2D.mass, 0));
+                    m_Rigidbody2D.AddForce(new Vector2(10*move * m_MaxSpeed * m_Rigidbody2D.mass, 0));
             }
             else if(m_AirControl && !m_Grounded)
             {
