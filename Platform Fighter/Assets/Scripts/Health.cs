@@ -12,6 +12,10 @@ public class Health : MonoBehaviour
     public virtual void Damage(float amount)
     {
         HP -= amount;
+        if(HP <= 0)
+        {
+            Death();
+        }
     }
 
     public virtual void Damage(float amount, bool stuns, GlobalDefinitions.DMGTYPE type, Vector2 direction) //add direction

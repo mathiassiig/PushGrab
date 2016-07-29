@@ -52,7 +52,7 @@ public class CharacterHealth : Health
     public override void Death(GlobalDefinitions.DMGTYPE type, Vector2 direction)  //add direction
     {
         Dead = true;
-        FindObjectOfType<GameMaster>().PlayerDied(gameObject.GetComponent<PlatformerCharacter2D>());
+        FindObjectOfType<GameMaster>().PlayerDied();
     }
 
     public void Heal(float amount)
