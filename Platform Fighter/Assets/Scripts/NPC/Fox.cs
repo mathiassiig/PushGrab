@@ -1,30 +1,35 @@
 ﻿using UnityEngine;
 using System.Collections.Generic;
 
-public class Fox : MonoBehaviour
+public class Fox : Health
 {
     public List<Transform> Path = new List<Transform>();
     public float MaxSpeed;
-    public float Damage;
+    public float DamageAmount;
     public Rigidbody2D m_Rigidbody2D;
     private int PathTarget = 0;
     private Health KillableTarget;
-    // Use this for initialization
-    void Start()
-    {
 
-    }
+    private bool Killing = false;
 
     // Update is called once per frame
     void Update()
     {
-        if (KillableTarget)
+        if (!KillableTarget && Killing == true)
         {
-            KillableTarget.Damage(0.1f);
+            Killing = false;
+            PathTarget++;
         }
-        else
+        if (PathTarget < Path.Count)
         {
-            FollowPath();
+            if (KillableTarget)
+            {
+                KillableTarget.Damage(DamageAmount);
+            }
+            else
+            {
+                FollowPath();
+            }
         }
     }
 
@@ -44,7 +49,7 @@ public class Fox : MonoBehaviour
         }
         else
         {
-            var health = target.gameObject.GetComponent<Dirtmound>();
+            var health = target.gameObject.GetComponent<Health>();
             if (health == null)
             {
                 PathTarget++;
@@ -52,11 +57,29 @@ public class Fox : MonoBehaviour
             else
             {
                 KillableTarget = health;
-                PathTarget++;
+                Killing = true;
             }
         }
     }
 
+    public override void Damage(float amount, bool stuns, GlobalDefinitions.DMGTYPE type, Vector2 direction)
+    {
+        HP -= amount;
+        if (HP <= 0)
+        {
+            Death(type, direction);
+        }
+    }
+
+    public override void Death(GlobalDefinitions.DMGTYPE type, Vector2 direction)
+    {
+        Destroy(gameObject);
+    }
+
+    public override void Death()
+    {
+        Destroy(gameObject);
+    }
     private int FindTargetDirection(float dis)
     {
         int dir = 1;

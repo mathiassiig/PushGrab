@@ -6,7 +6,6 @@ public class CharacterHealth : Health
     public bool m_Stunned;
     public float StunTime;
     public bool Dead = false;
-    public float SpeedDiff = 1000f;
     public Rigidbody2D self_rb2d;
     public CharacterVisuals visuals;
 
@@ -25,7 +24,8 @@ public class CharacterHealth : Health
         HP -= amount;
         if (HP <= 0)
         {
-            visuals.VisualDeath(type, direction, Mathf.Abs(HP));
+            if(visuals)
+                visuals.VisualDeath(type, direction, Mathf.Abs(HP));
             Death(type, direction);
         }
     }
@@ -52,6 +52,7 @@ public class CharacterHealth : Health
     public override void Death(GlobalDefinitions.DMGTYPE type, Vector2 direction)  //add direction
     {
         Dead = true;
+        
         FindObjectOfType<GameMaster>().PlayerDied();
     }
 
@@ -60,22 +61,5 @@ public class CharacterHealth : Health
         HP += amount;
         if (HP > MAXHP)
             HP = MAXHP;
-    }
-
-    void OnCollisionEnter2D(Collision2D collision)
-    {
-        //Check for direction
-        float speed = self_rb2d.velocity.magnitude;
-        Throwable throwable = collision.gameObject.GetComponent<Throwable>();
-        float diff = 0;
-        if (throwable != null)
-        {
-            diff = Mathf.Abs(throwable.CurrentVelocityMagnitude - speed);
-            if (diff > SpeedDiff && throwable.CurrentVelocityMagnitude > SpeedDiff)
-            {
-                //Debug.Log(diff * rb2d.mass);
-                Damage(diff * 0.05f*throwable.rb2d.mass, true, throwable.type, collision.gameObject.transform.position-transform.position);
-            }
-        }
     }
 }

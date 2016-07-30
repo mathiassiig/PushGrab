@@ -1,8 +1,8 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class Bunny : MonoBehaviour {
-
+public class Bunny : Health
+{
 	// Use this for initialization
 	void Start () {
 	
@@ -12,4 +12,9 @@ public class Bunny : MonoBehaviour {
 	void Update () {
 	
 	}
+
+    public override void Death()
+    {
+        Destroy(gameObject);
+    }
 }
