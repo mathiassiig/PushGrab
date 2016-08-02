@@ -6,12 +6,13 @@ public class Throwable : MonoBehaviour
     public GlobalDefinitions.DMGTYPE type;
     public float CurrentVelocityMagnitude;
     public Rigidbody2D rb2d;
-    public Camera2DFollow cam;
+    public CustomCamera cam;
     public PlatformerCharacter2D LastOwner;
+
     void Start()
     {
         rb2d = GetComponent<Rigidbody2D>();
-        cam = FindObjectOfType<Camera2DFollow>();
+        cam = FindObjectOfType<CustomCamera>();
     }
 
     // Update is called once per frame
