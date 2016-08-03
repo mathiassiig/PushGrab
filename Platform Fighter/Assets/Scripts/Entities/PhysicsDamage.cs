@@ -14,10 +14,13 @@ public class PhysicsDamage : MonoBehaviour
         float diff = 0;
         if (throwable != null)
         {
-            diff = Mathf.Abs(throwable.CurrentVelocityMagnitude - speed);
+            float overAllSpeed = Mathf.Abs(throwable.CurrentAngularVelocity) / 180f * throwable.CurrentVelocityMagnitude;
+            diff = Mathf.Abs(overAllSpeed - speed);
             if (diff > SpeedDiff && throwable.CurrentVelocityMagnitude > SpeedDiff)
             {
-                hp.Damage(diff * 0.05f * throwable.rb2d.mass, true, throwable.type, col.gameObject.transform.position - transform.position);
+                float dmg = diff * 0.05f * throwable.rb2d.mass;
+                //Debug.Log(dmg);
+                hp.Damage(dmg, true, throwable.type, col.gameObject.transform.position - transform.position);
             }
         }
     }

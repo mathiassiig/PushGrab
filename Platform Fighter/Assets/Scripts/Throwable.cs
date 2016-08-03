@@ -5,6 +5,7 @@ public class Throwable : MonoBehaviour
 {
     public GlobalDefinitions.DMGTYPE type;
     public float CurrentVelocityMagnitude;
+    public float CurrentAngularVelocity;
     public Rigidbody2D rb2d;
     public CustomCamera cam;
     public PlatformerCharacter2D LastOwner;
@@ -19,7 +20,9 @@ public class Throwable : MonoBehaviour
     void Update()
     {
         float LastVelocity = CurrentVelocityMagnitude;
+        float LastAngular = CurrentAngularVelocity;
         CurrentVelocityMagnitude = rb2d.velocity.magnitude;
+        CurrentAngularVelocity = rb2d.angularVelocity;
         CheckForScreenShake(LastVelocity, CurrentVelocityMagnitude);
     }
 
@@ -37,7 +40,10 @@ public class Throwable : MonoBehaviour
                 float velDiff = Mathf.Abs(current - last);
                 if (velDiff > 5)
                 {
-                    cam.ShakeAmount = (rb2d.mass / 300) * (velDiff / 40);
+                    float shakeamount = (rb2d.mass / 300) * (velDiff / 40);
+                    cam.ShakeAmount = shakeamount;
+                    //Handheld.Vibrate();
+                    //Debug.Log(shakeamount);
                 }
             }
         }
